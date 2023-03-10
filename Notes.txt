@@ -82,3 +82,36 @@ In all task input taken by user
 	100 - 1.20 = 120
 	50 - 1.50  = 75   total - 295
 	
+
+
+--------------------------Loops-----------------
+
+1. print multiplication table of user given input using all loops.
+2. print all even numbers from 1 to 50 using all loops.
+3. print all odd numbers from 1 to 50 using all loops.
+4. print all even numbers from 1 to 50 witout using ifusing all loops.
+5. print sum of first 10 natural number.
+6. Take input from user and count number of digit. ex. 57567 - 5
+7. Find first and last digit of number;  ex. 159643 -> first=1  , last=3
+8. Take input from user and print sum of all digits.
+9. Take input from user and print reverse number. ex. 4587 -> 7854
+10. check number is prime or not. 
+	prime -> 2 3 5 7
+	not prime -> 4 6 9...
+                                                      
+11. Find factorial of a number. ex. 5-> 5*4*3*2*1=120 
+12. Find lcm of two number. ( 12 , 6 --> lcm=12)
+13. Find gcd of two number. ( 4 , 5 --> gdc = 1    5 , 10 --> gcd=5)
+
+
+14. Check number is palindrom or not.
+
+	ex. 3452 -> not palindrom            
+		11211 -> palindrom
+
+15. print number with spelling. ( 1283 - one two eight three   , 523 -> five two three)
+16. print Fibonacci series.
+17. take two numbers from user(Starting range , ending range) and print allprime number between the range
+
+ 
+
