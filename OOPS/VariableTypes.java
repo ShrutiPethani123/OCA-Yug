@@ -29,6 +29,10 @@ public class VariableTypes {
     int a = 45;
     int b;
 
+    void print()
+    {
+        int f = 45; // local
+    }
     public static void main(String[] args) {
 
         int c; // local variable
