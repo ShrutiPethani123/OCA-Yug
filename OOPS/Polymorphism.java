@@ -11,6 +11,8 @@ polymorphism : many Forms
 
 2. Method overriding
 
+    -> Parent and child have same method name.
+
 
 
  */
