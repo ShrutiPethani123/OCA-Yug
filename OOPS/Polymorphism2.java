@@ -71,3 +71,14 @@ public class Polymorphism2 {
 
     }
 }
+
+
+/*
+ 
+    Make one class name College  and make two method department() and Facualty()
+    and another class Student that have two method department() and details() - department is overrided method 
+    and call departhment method using parent reference.
+
+
+    
+ */
