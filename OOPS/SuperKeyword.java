@@ -1,5 +1,7 @@
 class Test{
 
+
+    int x=34;
     Test()
     {
         System.out.println("Test class Default Constructor");
@@ -9,6 +11,11 @@ class Test{
     {
         System.out.println("Test class Pera. constuctor");
     }
+
+    void result()
+    {
+        System.out.println("Result!!");
+    }
 }
 
 class Student extends Test{
@@ -17,7 +24,7 @@ class Student extends Test{
     Student()
     {
         // super();
-        super(5);super(4);
+        super(5);
         System.out.println("Student class Default Constructor");
         // super(4);
     }
@@ -26,6 +33,14 @@ class Student extends Test{
     {
         id=s;
         System.out.println("Student class Pera. constuctor");
+    }
+
+    void display()
+    {
+        System.out.println(super.x);
+        System.out.println(x);
+        super.result();
+        result();
     }
 
 }
@@ -38,6 +53,7 @@ public class SuperKeyword {
         // Student st = new Student();
 
         Student s1 = new Student();
+        s1.display();
 
     }
 }
