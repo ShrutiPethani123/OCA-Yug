@@ -1,0 +1,1062 @@
+https://us02web.zoom.us/j/6652808888
+pwd=K1VWK2cyY0FRbUFON0pvNFdDZG9qQT09
+
+
+OCJP = Oracle certified java programmer 
+
+1 exam 
+
+OCA(associate)JP
+collection --> arraylist
+inheritance en
+encap
+exception
+basic java -> loops , conditional , ternary op etc
+Lamba expression , predicates  ---> java8
+
+
+OCP(professional)JP
+threads 
+collection
+syncr
+
+
+why ocp ?  java --> oracle
+
+
+
+boards -->
+
+concepts depth 
+
+stand out   
+
+
+
+
+
+
+
+
+
+
+double newPrice //local var
+
+price = 200  //updatePrice 
+
+price = 100
+
+product.price = 200 + 200
+=400
+
+int , float , double , char , string 
+
+boolean 
+
+switch (var --> dynamic/static )
+
+case (static):
+
+
+
+java :
+upcasting ---> implicitly 
+
+
+
+
+
+protected -> within one package 
+other package class has extend the class from first package
+
+
+
+default   within one package
+
+
+
+package A;
+
+class A{
+protected int pr;
+default int d;
+A()
+{
+
+}
+A(String ans)
+{
+
+}
+}
+
+class C 
+{
+ 	C.d;
+	C.pr;
+}
+
+class B extends A
+{
+B()
+{
+super();
+sop("");
+}
+
+main()
+{
+	B b = new B();
+	b.pr=9; 
+	b.d=10; // error
+}
+}
+
+
+rules for overriding methods 
+
+overriden method must have same or broader scope.
+
+
+Access modifiers : public > protected > default >private
+
+
+
+super()
+
+
+
+java classname 
+
+
+void method(
+}
+
+
+Frodo f = new Frodo();
+f.countgold();
+
+------------------------------
+
+10-06-2022
+
+
+https://drive.google.com/drive/folders/1bB8191IC5HHzEpoEWPWqgebG-38X0VG5
+
+
+int 2ab; //illegal identifier
+
+int $ab ; legal
+int _ab; 
+
+
+int public; //illegal id
+
+RoyalTechnosoft ----> camel case 
+
+
+
+
+command line args ---> java filename args
+
+public static int main(int i)
+{return ;}
+
+
+static imports : 
+
+import java.lang.*;
+
+import static java.lang.System.out;
+static import .....  // compile time error
+psvm()
+{
+	System.out.println(" ");
+	out.println(" ");
+}
+
+public var ---> within one class , within a package , outside package as well
+
+protected ---> class extend  ---> within one package , other package using inheritance 
+
+default ---> package level modifier---.> accessible within a package only
+
+private ---> class level modifier
+
+abstract classes : ? contains abstract as well as concrete methods
+
+abstract void start();
+
+void strt()
+{
+  // definition 
+}
+
+
+abstract final class A {   //invalid 
+
+}
+
+
+
+interface(100% abstract methods / default methods -->no concrete methods) vs abstract class ? 
+
+concrete method ---> void main(){
+
+}
+
+
+interface A   extends /implements      interface B
+
+class A  ext    class B
+
+class A   impl  interface B
+
+
+interface A      class B   // invalid order 
+
+
+
+interface A {
+abstract static void go()
+{
+//....
+}
+}
+
+class B implements A
+{
+go(){
+
+}
+
+B b = new B() 
+b.go();
+
+go(); 
+
+}
+
+
+abstract class Abstract1
+{
+	void go();
+}
+
+class  Abstract2 extends Abstract1
+{
+	void go()
+	{
+
+	}
+}
+
+
+instance var(class level ) vs local var ? 
+
+int a ;
+void go ()
+{
+static int a =9;  // error
+System.out.println(a);
+
+}
+
+enum Color {RED(0) , GREEN(1)}
+arr [] = Color.values()
+
+.ordinal()
+
+arr[1]
+
+x=0 ++x =
+
+x=1 < 3  True
+2<3 true   ---> A .
+3<3 false 
+
+------------------------------------------------------------
+11-06-22
+
+class A {
+
+private int a;
+
+void setA(int n)
+{
+	a=n;
+}
+int getA()
+{
+
+	return a;
+}
+
+
+}
+
+class B extends A{
+
+main()
+{
+
+B obj = new B();
+b.a=7;
+b.setA(7);
+int a = b.getA();
+}
+
+}
+
+
+polymorphism ----> to have many forms 
+|
+
+method overriding 
+	vs
+method overloading  --> 
+
+
+
+subclass extends superclass 
+
+Dog extends Animal ---> Dog is a(n)  animal 
+
+HAS A 
+
+class Address {
+int flatno ; 
+String area;
+String city ; 
+}
+
+
+class Employee {   ----> Employee has a(n) Address 
+
+String name ;
+int id ;
+Address address;  // instance var 
+}
+
+
+
+legal declaration 
+
+parent ref ---> child class object 
+
+
+Refernce var
+
+PlayerPiece 
+Objet
+Gameshape ---> (displayShape())
+Animatable
+
+ 
+class Shape {
+	public void displayShape ()
+	{ ....}
+}
+
+class Rectangle extends Shape {
+	(public)void displayShape(){
+	//runtime polymorphism ---> methods 
+}   // method overriden 
+
+	void area();
+
+	Shape s = new Rectangle();
+s-> Shape-> method override
+	s.displayShape(); //rectangle
+
+	s.area();  // compile error
+
+	Rectangle r = new Shape(); //classCast exception
+	r.area();
+
+	int a= (String)b;
+	s.displayShape();
+	
+	((Rectangle)s).area(); 
+----> downcasting 
+}
+
+
+interface----> public abstract , default ,static 
+
+
+overloading methods ----> within one class
+
+
+class Demo 
+{
+public static void main(String [] args)
+{
+	main();
+	main("abcds")
+}
+
+public static void main()
+{
+
+}
+
+public static void main(String args)
+{
+
+}
+
+
+public static int main(String args)
+{
+
+
+}
+
+
+}
+
+
+
+overriding 
+|
+
+method invoke ---> object
+
+overloading (compile time)
+|
+method invoke --->reference 
+
+
+-----------------------------------
+12-06-22
+
+
+int b =7;
+String a= b; //inconvertible type conversion --compile time error
+
+downcasting --> explicitly done
+
+upcasting ---> implicit
+
+
+interface :
+|
+
+1. public abstract
+
+	void go();  --> compulsary needs to be overriden
+
+2. static --> override not possible
+3. default(keyword) ---> only an interface can define, not mandatory to 			 override
+	default void go(){ return ; }
+
+
+multiple/hybrid inheritance ---> supported by interface and not by class.
+
+class A {
+
+	void run(){
+
+	}
+}
+class B {
+void run();
+	void run()
+	{
+	
+	}
+}
+class C extends A,B {
+void run ()
+{
+//
+}
+psvm(String [] args)
+{
+	C c.new C();
+	c.run();      //ambiguity error  
+
+}
+}
+
+
+class Demo{
+	int a,b ;
+Demo(){
+
+}
+
+	Demo(int a)
+	{
+		this.a=a;
+	}
+	psvm(String [] args)
+	{
+		Demo d = new Demo();  //compile error
+		
+	}
+
+}
+class Child extends Demo{
+	int ch;
+	Child(int a, int b){
+		this.ch = b;   // this(keyword needs to be declare on 1st line) 
+		super(a);
+		
+	}
+	Child c= new Child(6, 7);
+}
+
+
+class Demo {
+int a, b;
+static int c;
+//instance block  --> iniialize after obj creation
+	{
+		a=9;
+		b=8;
+	}
+
+//static block
+static{
+		c=5;
+	}
+	Demo(){
+		b=7;
+	}
+	Demo(int a, int b){
+		b=8;
+	}
+
+	Demo(int a){
+	this.a=a;
+	this(a,8);
+	
+	}
+
+}
+
+
+static block (once)  ---> instance block---> constructor
+
+
+CH3
+
+
+memory area 
+|
+stack(local var, refernce var, methods call) 
+LIFO ---> Last in first out
+       
+heap(object-(instance var)) 
+
+
+int a = 1_00_000;  //valid or error? 
+int a= _100;  //invalid
+double a = 1_00.0_0;  //invalid
+double a= 1_000.00 //valid
+
+//binary literals start with 0B or 0b
+
+//hexadec litrals start with 0X or 0x
+
+
+float var = 1000000.00 ; // compile error
+
+float var= 1000000.00f; //compiles successfully
+
+---------------------
+
+interface static method call : 
+InterfaceName.methodName()
+
+------------------------------
+15-06-22
+
+
+implicit casting     explicit casting
+
+byte b=9;		int a=9111;
+			byte b = (byte)a; 
+
+int a = b;
+
+
+166667676
+
+
+byte b1 = b + 7;  //compilation error
+
+
+int a;
+Demo d ; 
+main(a, d);
+void main(int a, Demo b)
+{
+a=7;
+sop(a); //a=7
+b.a = 5;
+}
+sop(a); // a=0
+sop(d.a); // 5;
+
+
+for(int i=0; i<n;i++)  // block variable
+{
+	System.gc();
+}
+
+
+byte < short < int < float < long < double 
+
+explicit casting ,downcasting<------------
+
+---------------> impicit casting , upcasting
+
+
+
+------------------------------------------------------
+17-06
+
+
+    |    vs   ||
+
+
+if(condition1 || condition2)   ---> if condition1 is true,then doesnt check conditon2
+
+if(condition1 | condition2) ---> compulsarily checks both conditions
+
+	& vs && 
+
+System.out.println("royal" + 7 + 5);
+--> royal75
+
+System.out.println(7 + 5 + "royal"  );
+---> 12royal
+
+System.out.println("royal" + (7 + 5));
+--> royal12
+
+
+
+XOR  (^) 
+
+	true true --> false
+	true false --> true
+	false true --> true 
+	false false --> false 
+
+OR (||)
+
+	false false --> false 
+	else --> true
+
+AND (&&)
+	true true --> true
+	else --> false
+
+
+instance of --> indicates is a relationship 
+
+
+  if object is an instance of child class , then it is also an object of parent class.
+
+-----------------------------
+18-06
+
+
+
+
+void main()
+{
+try{
+	int i = 10/0;
+}
+catch(Exception e)
+{
+	e.printStack();
+}
+sop("");
+}
+
+Exception -->  event --> disturbs program normal flow.  
+   | 
+ throws object 
+
+
+
+Throwable
+	Exception
+		Unchecked(RunTime) -->AithmeticExc, ArrayOutofBound, 					NullPointer, NumberFormat etc
+
+		Checked(CompileTime)--> IOExcep, SQLEXcept
+	Error
+		StackOverflowError --> memory leak
+
+
+Errors: irrecoverable 
+
+try {
+	//code 
+}catch(Exception e ){
+
+}	
+
+
+try{
+
+}catch (ArithmeticExc e){}
+catch (NumberFormatExc e){}
+
+try{
+
+}catch (Exception e){}
+catch (NumberFormatExc e){}
+
+
+
+ 
+try{
+
+	//connections established 
+}catch (NumberFormatExc e){}
+catch (Exception e){}  //compiletime error
+
+finally{
+	//important code ---> connections close 
+}
+ 
+try{
+}
+finally{} --> only one finally block can be written
+	
+try{
+
+
+}  //catch or finally
+
+throws --> exception declare --> IOExc, filenotfoundExce(Checked exceptions)
+
+static void go() throws FileNOtFoundException {
+
+//use file --> checked exce(filenotfound)
+	throw FileNOtFoundException;
+}  
+
+main()
+{
+try {go();}
+catch(FileNotFoundException e){e.getMessage();}
+
+}
+
+
+
+throw --> to throw exception --> custom exceptions 
+
+
+
+void go() throws RunTimeException
+{
+	throw RunTimeException("hello");
+}
+
+
+ways to handle method throwing exception 
+case 1 : we can catch exception using trycatch block . 
+
+-it handles the exception , the code will be excecuted whether or not exception arises.
+
+ 
+case 2 : declare an exception using throws (warning).
+-if excep does not occur , the code will be excecuted.
+- if excep occurs , code will not be handled.
+
+
+
+Exception Propogation : 
+
+void m(){
+	throw ArithmeticException();
+}
+
+void a(){
+m();
+}
+
+void c(){
+try{
+a();
+}
+catch(Exception e){print("abc")}
+
+}
+
+
+Exception with overriding methods :
+
+
+1)if parentclass method doesnot declare an exception, then childclass method cannot declare checked exception.
+
+class Parent{
+void go(){}
+}
+class Child extends Parent{
+void go() throws IOException   // compileerror
+{}
+}
+
+2)if parentclass method  declares an exception, then childclass method can declare same or subclass exception or no exception, but cannot declare parent exception.
+
+class Parent{
+	void go() throws IOEXception{}
+}
+class Child{
+	void go() throws IOException   
+	{}
+	void go() throws Exception   // compiletimeerror
+	{}
+	void go() 
+	{}
+	void go() throws RuntimeExc  
+	{}
+}
+
+https://us02web.zoom.us/j/6652808888?pwd=K1VWK2cyY0FRbUFON0pvNFdDZG9qQT09
+---------------------------------------
+22-06-22
+
+lambda function : provides implementation for functional interface, less complex code
+
+functional interface :  interface which has only one abstract method
+
+@functionalInterface
+interface Drawable {
+	void draw();   // single abstract method
+}
+
+eg. of lambda function :
+
+//normal method
+void draw ()
+{
+	System.out.println("inside method");
+}
+
+
+
+//same method using lambda function
+
+() -> System.out.println("inside method");
+
+
+1.No Parameter Syntax:
+() -> {  
+//Body of no parameter lambda  
+}  
+
+2.One Parameter Syntax:
+(p1) -> {  
+//Body of single parameter lambda  
+System.out.println("p1 =" + p1);
+}  
+
+3.Two Parameter Syntax:
+(p1,p2) -> {  
+//Body of multiple parameter lambda  
+}  
+
+
+
+*implementing functional interface making use of anonymous class:
+
+------------------
+Note :
+
+An anonymous class must be defined inside another class. Hence, it is also known as an anonymous inner class. Its syntax is:
+
+class outerClass {
+
+    // defining anonymous class
+    object1 = new Type(parameterList) {
+         // body of the anonymous class
+    };
+}
+---------------
+
+
+
+@functionalInterface
+interface Drawable {
+	void draw();   // single abstract method
+}
+
+class A implements Drawable{
+	public void draw()
+	{
+		//override method
+	}
+}
+
+
+class AnonymousDemo {
+   public void createClass() {
+
+ // anonymous class implementing interface & overrideusing lambda function
+      Drawable d1 = new Drawable() {
+         ()-> {
+            System.out.println("Inside an anonymous class.");
+         }
+      };
+      d1.draw();
+   }
+}
+
+class Main {
+   public static void main(String[] args) {
+      AnonymousDemo an = new AnonymousDemo();
+      an.createClass();
+   }
+}
+
+
+
+---------------------------------
+Predicate : 
+
+There are some predefined functional interface in Java like Predicate, consumer, supplier etc.  It improves manageability of code, helps in unit-testing them separately,
+---------------------------------
+
+Note:
+
+The Predicate interface has a single method to implement that’s called test(), and it takes
+one argument and returns a boolean always.
+
+As the Predicate.test() method returns a boolean, it can be placed  wherever a boolean expression can go, e.g., in if, while, do, and ternary statements.
+
+Predicate lambda expressions have three parts: a single argument, an arrow (->), and an expression or code block.
+
+A Predicate lambda expression’s argument can be just a variable or a type and variable together in parentheses, e.g., (MyClass m).
+
+
+------------------------
+
+
+test(T t) : Evaluates this predicate on the given argument.boolean test(T t)
+test(T t) 
+Parameters:
+t - the input argument
+Returns:
+true if the input argument matches the predicate, otherwise false
+
+
+import java.util.function.Predicate;
+public class PredicateInterfaceExample {
+	public static void main(String[] args)
+	{
+		// Creating predicate
+	Predicate<Integer> lesserthan = num -> (num < 18);
+
+		// Calling Predicate method
+		System.out.println(lesserthan.test(10)); // output true
+	}
+}
+
+
+
+--------
+garbage collection
+
+1. Unreachable objects: An object is said to be unreachable if it doesn’t contain any reference to it. Also, note that objects which are part of the island of isolation are also unreachable. 
+
+Integer i = new Integer(4);
+// the new Integer object is reachable  via the reference in 'i' 
+i = null;
+// the Integer object is no longer reachable. 
+
+
+
+Nullifying the reference variable
+
+Re-assigning the reference variable
+
+An object created inside the method
+
+
+-------------
+12.
+ta = A
+ta = AB
+tb = C
+ta=ABC
+ABD
+ta=ABCC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

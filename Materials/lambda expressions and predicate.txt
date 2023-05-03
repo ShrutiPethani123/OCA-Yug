@@ -1,0 +1,206 @@
+lambda function : provides implementation for functional interface, less complex code
+
+
+Java Lambda Expression Syntax:
+(argument-list) -> {body} // no need to write method name  
+
+
+*functional interface :  interface which has only one abstract method
+
+@functionalInterface
+interface Drawable {
+	void draw();   // single abstract method
+}
+
+eg. of lambda function :
+
+//normal method
+void draw ()
+{
+	System.out.println("inside method");
+}
+
+
+
+//same method using lambda function
+
+() -> System.out.println("inside method");
+
+
+
+*we can use lambda function to implement functional interface method as it has only one abstract method and so no need to mention the name of method.
+
+
+1.No Parameter Syntax:
+() -> {  
+//Body of no parameter lambda  
+}  
+
+2.One Parameter Syntax:
+(p1) -> {  
+//Body of single parameter lambda  
+System.out.println("p1 =" + p1);
+}  
+
+3.Two Parameter Syntax:
+(p1,p2) -> {  
+//Body of multiple parameter lambda  
+}  
+
+
+4.with return type :
+Drawable d = ()-> return "Hello";
+
+
+*implementing functional interface making use of anonymous class:
+
+------------------
+Note :
+
+An anonymous class must be defined inside another class. Hence, it is also known as an anonymous inner class. Its syntax is:
+
+class outerClass {
+
+    // defining anonymous class
+    object1 = new Type(parameterList) {
+         // body of the anonymous class
+    };
+}
+---------------
+
+
+
+@functionalInterface
+interface Drawable {
+	void draw();   // single abstract method
+}
+
+
+class AnonymousDemo {
+   public void createClass() {
+
+ // anonymous class implementing interface & overrideusing lambda function
+      Drawable d1 = new Drawable() {
+         ()-> {
+            System.out.println("Inside an anonymous class.");
+         }
+      };
+      d1.draw();
+   }
+}
+
+class Main {
+   public static void main(String[] args) {
+      AnonymousDemo an = new AnonymousDemo();
+      an.createClass();
+   }
+}
+
+
+
+---------------------------------
+Predicate : 
+
+There are some predefined functional interface in Java like Predicate, consumer, supplier etc.  It improves manageability of code, helps in unit-testing them separately,
+---------------------------------
+
+Note:
+
+The Predicate interface has a single method to implement that’s called test(), and it takes
+one argument and returns a boolean.
+
+As the Predicate.test() method returns a boolean, it can be placed  wherever a boolean expression can go, e.g., in if, while, do, and ternary statements.
+
+Predicate lambda expressions have three parts: a single argument, an arrow (->), and an expression or code block.
+
+A Predicate lambda expression’s argument can be just a variable or a type and variable together in parentheses, e.g., (MyClass m).
+
+
+------------------------
+
+
+test(T t) : Evaluates this predicate on the given argument.boolean test(T t)
+test(T t) 
+Parameters:
+t - the input argument
+Returns:
+true if the input argument matches the predicate, otherwise false
+
+
+import java.util.function.Predicate;
+public class PredicateInterfaceExample {
+	public static void main(String[] args)
+	{
+		// Creating predicate
+		Predicate<Integer> lesserthan = num -> (num < 18);
+
+		// Calling Predicate method
+		System.out.println(lesserthan.test(10)); // output true
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

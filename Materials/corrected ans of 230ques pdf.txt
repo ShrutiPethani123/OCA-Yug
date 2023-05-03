@@ -1,0 +1,130 @@
+corrected ans of 230ques pdf
+---------------------
+latest oca dumps :
+
+run code for :
+
+3  exception
+
+7 A
+
+12 "ABCC"
+
+
+
+17 B c G
+
+18 c
+
+19 c
+
+23 
+
+30 C
+
+49 B
+
+55 B,c,E
+
+56 C
+
+58 B
+
+62 - D
+
+63 B,D
+
+65 D
+
+85 false false
+
+96 B
+
+101 B
+
+105 c,d
+
+107 bce
+
+113 C 
+
+116 D
+
+119 D
+
+120 A C
+
+127 B
+
+132 B
+
+133 C  E
+
+135 A
+
+140 C
+
+153 C  -->first of all , removeif checks the return condition , if condition is true for any element of arraylist ,then only if block will be iterated.
+
+154 A 
+
+158-->c,d,f
+
+165 b d
+
+169 b
+
+176 D
+
+177 Derived A , Derived B 
+
+178 A
+
+180 doubt B
+
+182 C
+
+184 A E
+
+187 B
+
+193 A
+
+197 
+
+
+210 for sure we can have a file with main method inside non-public class and it will compile as well as run successfully, but make sure that at the time of running the program we have to pass the class name of "main method" to the java interpreter instead of the class which is public
+
+211 A
+
+213 should be A
+
+216 A  C
+
+220 default value of char is .   '\u0000'
+
+221 A C
+
+222
+
+
+
+casting : polymorph
+lambda predicates
+static 
+arraylist
+
+
+
+
+
+doubt
+
+78
+81 - a
+
+
+
+
+
+
